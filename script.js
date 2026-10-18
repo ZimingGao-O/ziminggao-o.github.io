@@ -123,3 +123,12 @@ const sectionObserver = new IntersectionObserver(entries => {
   });
 }, { rootMargin: '-15% 0px -60% 0px', threshold: 0 });
 document.querySelectorAll('main section[id]').forEach(section => sectionObserver.observe(section));
+
+// The two inspection scenarios are candidates; this changes only the illustration.
+document.querySelectorAll('[data-scenario-choice]').forEach(button => {
+  button.addEventListener('click', () => {
+    const graphic = button.closest('[data-demo="xr"]');
+    graphic.dataset.scenario = button.dataset.scenarioChoice;
+    graphic.querySelectorAll('[data-scenario-choice]').forEach(option => option.setAttribute('aria-pressed', String(option === button)));
+  });
+});

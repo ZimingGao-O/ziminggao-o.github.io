@@ -36,10 +36,10 @@
         <div class="hero-copy reveal">
           <p class="eyebrow">Human-Computer Interaction · Hong Kong</p>
           <h1>Ziming Gao<span class="name-dot" aria-hidden="true">.</span></h1>
-          <p class="hero-affiliation">MSc(Eng) student at HKU <span>·</span> Research at Zhejiang IDEA Lab</p>
+          <p class="hero-affiliation">MSc(Eng) at HKU <span>·</span> XR research at Situated Reality Lab</p>
           <p class="hero-lede">
-            I explore how AI can understand physical contexts and provide useful support during
-            everyday activities and physical skill learning.
+            I study XR interaction and human-AI assistance that fit the way people act,
+            learn, and work in the physical world.
           </p>
           <div class="hero-actions">
             <a class="button button-dark" href="#research">Explore my research</a>
@@ -61,12 +61,14 @@
             <p>
               I am an MSc(Eng) student in Innovative Design and Technology at The University of Hong
               Kong, with a BEng in Industrial Design from Beihang University. Since March 2026, I have
-              been conducting HCI research at the IDEA Lab, Zhejiang University.
+              been conducting HCI research at the IDEA Lab, Zhejiang University. I have also joined
+              <a href="https://www.situated-reality.org" target="_blank" rel="noopener noreferrer">Situated Reality Lab</a> at HKU for my dissertation on XR interaction during
+              bimanual object handling.
             </p>
             <p>
               My background connects formative research, user-study design, physical prototyping, wearable hardware,
               and research visualization. I am especially interested in human-AI interaction,
-              context-aware assistance, physical skill learning, and multimodal interaction.
+              XR input, context-aware assistance, physical skill learning, and multimodal interaction.
             </p>
             <a class="text-link" href="assets/ziming-gao-cv.pdf" target="_blank" rel="noreferrer">Download academic CV <span>↗</span></a>
           </div>
@@ -79,6 +81,51 @@
           <h2>Current research</h2>
           <div><p>Grounding digital knowledge and human intent in the physical world.</p><button class="motion-toggle" type="button" aria-pressed="false">Pause motion <span aria-hidden="true">Ⅱ</span></button></div>
         </div>
+
+
+        <article class="research-card research-card-sage reveal" id="xr-microgestures">
+          <div class="research-card-copy">
+            <div class="card-meta"><span>Dissertation research · HKU</span><span>XR interaction</span></div>
+            <h3>Small gestures,<br />occupied hands.</h3>
+            <p class="card-question">How can people issue simple XR commands while both hands are holding or working with an object?</p>
+            <p>At Situated Reality Lab, I am exploring small movements that remain possible within a fixed grasp. The aim is to issue commands such as “next instruction” or “repeat” while preserving the task in hand.</p>
+            <div class="contributions"><h4>Current research plan</h4><ul>
+              <li>Elicit gestures from users within a concrete task and grasp.</li>
+              <li>Distinguish command gestures from ordinary object handling.</li>
+              <li>Evaluate command input alongside object stability and material state.</li>
+            </ul></div>
+            <p class="status-line">Early-stage research · Scenario selection in progress<br />Target submission: UIST 2027</p>
+          </div>
+          <div class="intent-graphic xr-graphic" data-demo="xr" data-phase="0" data-scenario="panel" role="group" aria-label="Concept illustration of the planned XR gesture study">
+            <div class="demo-topline"><span><i></i> XR input</span><span>Study concept · not a working prototype</span></div>
+            <div class="intent-request">Keep the task in hand.</div>
+            <div class="xr-scenarios" aria-label="Candidate inspection scenarios">
+              <button type="button" data-scenario-choice="panel" aria-pressed="true">Rigid panel</button>
+              <button type="button" data-scenario-choice="fabric" aria-pressed="false">Spread fabric</button>
+            </div>
+            <div class="xr-scene">
+              <svg viewBox="0 0 400 230" fill="none" aria-hidden="true">
+                <path d="M24 205H376" stroke="currentColor" opacity=".12"/>
+                <g class="xr-object-panel"><rect x="94" y="55" width="212" height="128" rx="7" fill="#f9fbf6" stroke="currentColor" stroke-width="2"/><path d="M116 80H284M116 96H242M116 153H284" stroke="currentColor" opacity=".18"/><circle cx="247" cy="127" r="12" stroke="currentColor" stroke-dasharray="3 4"/></g>
+                <g class="xr-object-fabric"><path d="M94 59Q200 76 306 59L306 176Q200 194 94 176Z" fill="#f9fbf6" stroke="currentColor" stroke-width="2"/><path d="M105 82Q200 98 295 82M105 110Q200 123 295 110M105 143Q200 159 295 143" stroke="currentColor" opacity=".2"/></g>
+                <g stroke="currentColor" stroke-width="2" fill="#d4e6da"><path d="M23 219L45 142Q50 127 64 124L89 115Q101 111 105 120Q108 127 97 133L81 141L99 140Q111 141 110 151L106 169Q104 180 87 183L68 226"/><path d="M377 219L355 142Q350 127 336 124L311 115Q299 111 295 120Q292 127 303 133L319 141L301 140Q289 141 290 151L294 169Q296 180 313 183L332 226"/></g>
+                <g class="xr-motion-cue" stroke="#397c65"><path d="M70 110Q67 89 86 86M86 86L79 83M86 86L81 93" stroke-width="2"/><circle cx="88" cy="121" r="19" stroke-dasharray="3 4"/></g>
+                <g class="xr-measure" stroke="#397c65" stroke-dasharray="4 4"><path d="M80 49H320M80 192H320M200 38V205"/><circle cx="200" cy="120" r="9"/></g>
+              </svg>
+              <span class="xr-scene-note">Two candidate tasks · grasp to be defined</span>
+            </div>
+            <div class="xr-phase-copy">
+              <p data-panel="0">Start with a real inspection task and a fixed two-handed grasp.</p>
+              <p data-panel="1" aria-hidden="true">Show a command outcome. Ask users which small actions they can perform.</p>
+              <p data-panel="2" aria-hidden="true">Test recognition, unintended triggers, and disruption to the primary task.</p>
+            </div>
+            <div class="demo-controls" aria-label="Explore the planned study">
+              <button type="button" data-step="0" aria-pressed="true"><span>01</span> Hold</button>
+              <button type="button" data-step="1" aria-pressed="false"><span>02</span> Elicit</button>
+              <button type="button" data-step="2" aria-pressed="false"><span>03</span> Evaluate</button>
+            </div>
+          </div>
+        </article>
 
         <article class="research-card research-card-blue reveal">
           <div class="research-card-copy">
@@ -248,6 +295,7 @@
             <p>My path brings together industrial design, engineering, and human-centered computing.</p>
           </div>
           <div class="timeline">
+            <article class="timeline-item reveal"><div class="timeline-date">09/2026–present</div><div><h3><a href="https://www.situated-reality.org" target="_blank" rel="noopener noreferrer">Situated Reality Lab, HKU</a></h3><p>MSc dissertation research · XR microgestures during bimanual object handling</p></div></article>
             <article class="timeline-item reveal"><div class="timeline-date">09/2026–present</div><div><h3>The University of Hong Kong</h3><p>MSc(Eng) in Innovative Design and Technology</p></div></article>
             <article class="timeline-item reveal"><div class="timeline-date">03/2026–present</div><div><h3>IDEA Lab, Zhejiang University</h3><p>Research Intern · Human-AI interaction and context-aware assistance</p></div></article>
             <article class="timeline-item reveal"><div class="timeline-date">09/2025–03/2026</div><div><h3>Beihang University</h3><p>Part-time Research Assistant · High-temperature and High-pressure Flexible Forming Laboratory</p></div></article>
